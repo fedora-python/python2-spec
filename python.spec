@@ -108,7 +108,7 @@ Summary: An interpreted, interactive, object-oriented programming language
 Name: %{python}
 # Remember to also rebase python-docs when changing this:
 Version: 2.7.12
-Release: 6%{?dist}
+Release: 7%{?dist}
 License: Python
 Group: Development/Languages
 Requires: %{python}-libs%{?_isa} = %{version}-%{release}
@@ -1937,6 +1937,9 @@ rm -fr %{buildroot}
 # ======================================================
 
 %changelog
+* Thu Sep 08 2016 Charalampos Stratakis <cstratak@redhat.com> - 2.7.12-7
+- Test webhooks
+
 * Fri Sep 02 2016 Charalampos Stratakis <cstratak@redhat.com> - 2.7.12-6
 - Remove unversioned Obsoletes
 
